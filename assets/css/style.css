@@ -1,0 +1,31 @@
+body {
+background-image: url("../images/desert.jpeg");
+}
+h1{
+    float:right;
+    font-family: 'Trebuchet MS';
+    font-size: 60pt;
+    margin-right:12.5%;
+    animation-duration: 1200ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation:blink 1200ms infinite;
+     /* Safari and Chrome */
+}
+@keyframes blink {
+    from {
+        color:red;
+    }
+    to {
+        color:white;
+    }
+}
+@-webkit-keyframes blink {
+    from {
+        color:red;
+    }
+    to {
+        color:silver;
+    }
+}
