@@ -1,18 +1,40 @@
-// VARIABLES
+// VARIABLES and ARRAYS
 var hangmanwords = ["lefty","stagecoach","cactus", "arrow","shootout","Texas","calvalry","boots","cowboy","petroglyph"];
-var userguess = [];
+var selectedWord = "";
+var lettersinWord ="";
+var numBlanks=0;
+var blanksAndSuccess= [];
+var wrongLetters = [];
 
-//RANDOMIZER
-var randomword = hangmanwords[Math.floor(Math.random() * hangmanwords.length)];
-console.log(randomword);
-document.write(randomword);
+// COUNTERS
 
-document.onkeyup=function(event){
-    console.log(event.key)
-if (event.key = randomword.charAt(randomword.length-1));
+var winCount = 0;
+var lossCount = 0;
+var guessesLeft = 9;
 
-then (document.write(event.key));
+// Game Logic
+
+function beginGame () {
+    selectedWord = wordOptions[Math.floor(math.random() * wordOptions.length)];
+    lettersinWord = selectedWord.split("");
+    numBlanks = lettersinWord.length("");
+
+    // Reset
+    guessesLeft = 9;
+    wrongLetters = [];
+    blanksAndSuccess = [];
+
+    // Populate blanks and Success with right number of blanks
+
+    for (var i=0; i<numBlanks; i++) {
+        blanksAndSuccess.push("");
+    }
+
+
+    // testing debugging
+    console.log(selectedWord);
+    console.log(lettersinWord);
+    console.log(numBlanks);
 }
-
 
 
