@@ -2,10 +2,7 @@ body {
 background-image: url("../images/desert.jpeg");
 }
 h1{
-    float:right;
-    font-family: 'Trebuchet MS';
-    font-size: 60pt;
-    margin-right:12.5%;
+/* header animation */
     animation-duration: 1200ms;
     animation-name: blink;
     animation-iteration-count: infinite;
