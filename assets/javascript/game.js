@@ -89,7 +89,7 @@ function roundComplete() {
 
         // Update win counter in HTML
         document.getElementById("winCounter").innerHTML = winCount;
-
+        startGame();
     }
 
 
